@@ -48,15 +48,14 @@
             display: flex;
             justify-content: space-between;
             padding: 5px;
-            height: 25px;
+            height: 30px;
             background: rgba(0, 0, 0, 0.1);
         }
         
         .close-btn {
             background: rgba(255, 255, 255, 0.8);
-            border: none;
-            width: 10px;
-            height: 10px;
+            width: 15px;
+            height: 15px;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -65,6 +64,7 @@
             font-size: 12px;
             font-weight: bold;
             transition: all 0.2s;
+            color: #333;
         }
         
         .close-btn:hover {
@@ -245,11 +245,11 @@
 
             const popupTitle = document.createElement('div');
             popupTitle.className = 'popup-title';
-            popupTitle.textContent = '开水哥友情提醒';
+            popupTitle.textContent = '来着粉丝果粒橙的提醒';
             
-            const closeBtn = document.createElement('button');
+            const closeBtn = document.createElement('div');
             closeBtn.className = 'close-btn';
-            closeBtn.innerHTML = '×';
+            closeBtn.textContent = 'x';
             closeBtn.addEventListener('click', () => closePopup(popup));
             
             popupHeader.appendChild(popupTitle);
